@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+/*
+========================================================================
+# 1.0 - General styles
+------------------------------------------------------------------------
+*/
+/*
+body, html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background: #000E1B;
+  color: #3a3a3a;
+  height: 100%;
+}
+*/
+.timing > h4 {
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	line-height: 1em;
+	font-weight: normal;
+	margin: 0 0 10px;
+}
+
+
+
+.timing > h4 { font-size: 18px;}
+
+
+.timing > p {
+	
+	font-weight: normal;
+}
+
+
+
+
+
+/*--------------------------------------
+     Background image
+----------------------------------------*/
+
+.bg {
+	background: url(../images/bg.jpg)  no-repeat center center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    height: 100%;
+	position: relative;
+	text-align:center;
+}
+
+
+.bg-color
+ {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-block {
+	 background: #f8faeb;
+}
+
+/*--------------------------------------
+# - 3.1 Countdown section style start here
+----------------------------------------*/
+
+.timing {
+	margin-top: 30px;
+}
+.time_circles > div > h4 {
+	color: #EDB400;
+}
+.time_circles > div > span {
+	color: #fff;
+}
+
+/*Responsiveness*/
+
+
