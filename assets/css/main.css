@@ -976,12 +976,12 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin: auto; 
 
 }
-/*.sponsii{
+.sponsii{
   display: flex; 
   width: 100% !important;
   justify-content: center;
   align-items: center;
-}*/
+}
 #sponsors .spnsors-logo { 
   border-radius: 10px;
   width: 220px;
