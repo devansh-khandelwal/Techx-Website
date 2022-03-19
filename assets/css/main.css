@@ -1035,7 +1035,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 /* Schedule Area */
 #schedules {
-  background-color: #323232;
+  background-color: #000000;
   color: #ffffff;
   padding: 1rem;
   font-family: 'Playfair Display', serif;
@@ -1170,7 +1170,7 @@ h1 {
 }
 
 .schedule .schedule-tab-title .nav-tabs {
-  background: #212121;
+  background: #000000;
 }
 
 .schedule .schedule-tab-title .nav-tabs .nav-link {
@@ -2513,5 +2513,144 @@ hr{
   #mid-div{
     margin-top:30px;
     text-align:left;
+  }
+}
+
+
+/* New Schedule */
+.schedule-tabs-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.schedule-tab {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.schedule-tab.selected-tab {
+  border-bottom: 2px solid #14ffec;
+}
+
+.schedule .schedule-tab-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.schedule-content {
+  position: absolute;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: 0.6s;
+  left: 0;
+  top: 0;
+}
+
+.schedule-content-selected {
+  position: relative;
+  opacity: 100%;
+  transform: scale(1);
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.schedule-content-container {
+  position: relative;
+  padding: 20px;
+}
+
+.schedule-timeline {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.schedule-timeline__checkpoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+}
+
+.schedule-timeline__checkpoint-title {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 5px;
+  text-align: center;
+}
+
+.schedule-timeline__checkpoint-bullet {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: #14ffec;
+}
+
+.schedule-timeline__checkpoint-bullet--selected {
+  background-color: #000;
+  transform: scale(1.1);
+  border: 3px solid #14ffec;
+  transition: 0.4s;
+}
+
+.schedule-timeline__line {
+  position: absolute;
+  bottom: 15px;
+  width: 80vw;
+  margin: auto;
+  height: 2px;
+  background-color: #14ffec;
+  z-index: -1;
+}
+
+.schedule-timeline__selected-content-container {
+  position: relative;
+  padding: 30px;
+}
+
+.schedule-timeline__content {
+  position: absolute;
+  padding: 10px 0;
+  opacity: 0;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.schedule-timeline__selected-content {
+  position: static;
+  opacity: 1;
+  transition: all 0.6s;
+}
+
+#schedules {
+  padding: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .schedule .schedule-tab-title {
+    font-size: 1.5rem;
+  }
+  .schedule-timeline__checkpoint-title {
+    font-size: 1.4rem;
+  }
+  .schedule-timeline__content {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .schedule .schedule-tab-title {
+    font-size: 1.2rem;
+  }
+  .schedule-timeline__checkpoint-title {
+    font-size: 1rem;
+  }
+  .schedule-timeline__content {
+    font-size: 1rem;
   }
 }
