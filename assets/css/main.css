@@ -995,7 +995,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: #fff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  /*box-shadow: -1px 1px 43px #58bfffcc;*/
+  box-shadow: -1px 1px 43px #58bfffcc;
 }
 #sponsors .spnsors-logo img{
   max-width: 220px;
@@ -1016,7 +1016,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #sponsors .row {
   padding-top: 3rem;
-}/*
+}
 .btnt{
   margin: 50px 0 0 0 !important; 
 }
@@ -1032,7 +1032,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 .btnt a:hover{
   background-image: linear-gradient(to right, #29abfccc 0%, #9fdaffcc 50%, #13a4ffe3 100%);
   box-shadow: -1px 1px 43px #c7e9ff6c;
-}*/
+}
 /* Schedule Area */
 #schedules {
   background-color: #323232;
