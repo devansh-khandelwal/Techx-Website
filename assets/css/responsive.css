@@ -195,7 +195,8 @@
 /* mobile or only mobile */
 @media (max-width: 767px) {
   .section-title {
-    font-size: 22px;
+    font-size: 26px;
+    line-height: 30px;
   }
   .section-sub {
     font-size: 16px;
