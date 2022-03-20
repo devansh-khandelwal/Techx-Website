@@ -6,7 +6,7 @@ html {
 
 
 body {
-  background: #212121;
+  background: black;
   font-size: 15px;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
@@ -61,7 +61,6 @@ ul, ol {
 ul li, ol li {
   list-style: none;
 }
-
 
 .hero-heading {
   font-size: 40px;
