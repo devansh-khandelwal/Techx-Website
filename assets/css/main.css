@@ -971,17 +971,18 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 /* Sponsors Area */
+
+
 #sponsors {
   background: #323232;
   width: 100%;
   margin: auto; 
-
 }
 .sponsii{
   display: flex; 
   width: 100% !important;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 #sponsors .spnsors-logo { 
   border-radius: 10px;
@@ -1001,9 +1002,78 @@ a.back-to-top:hover, a.back-to-top:focus {
   max-height: 140px;
 }
 #sponsors .sponsors-logo { 
-  margin-bottom: 30px;
+  border-radius: 10px;
+  width: auto; 
+  height: 200px; 
+  border: 1px solid #212121;
+  background: #212121;
+  box-shadow: -2px 0.5px 43px #414141;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; 
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#sponsors .assoc{
+  margin-bottom: -35px;
+}
+@media screen and (max-width: 1100px) {
+  #sponsors .spnsors-logo { 
+    width: 190px;
+    height: 110px; 
+  }
+  #sponsors .spnsors-logo img{
+    max-width: 190px;
+    max-height: 110px;
+  } 
+}
+@media screen and (max-width: 1000px) {
+  #sponsors .spnsors-logo { 
+    width: 140px;
+    height: 80px; 
+  }
+  #sponsors .spnsors-logo img{
+    max-width: 140px;
+    max-height: 80px;
+  } 
+}
+@media screen and (max-width: 767px) {
+  #sponsors .spnsors-logo { 
+    width: 100px;
+    height: 72px; 
+  }
+  #sponsors .spnsors-logo img{
+    max-width: 100px;
+    max-height: 72px;
+  } 
 }
 
+@media screen and (max-width: 575px) {
+  #sponsors .spnsors-logo { 
+    width: auto;
+    height: 290px; 
+  }
+  #sponsors .spnsors-logo img{ 
+    max-width: 100%;
+    max-height: 290px;
+  }  
+  .sponsii{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #sponsors .spnsors-logo {  
+    height: 240px; 
+  }
+  #sponsors .spnsors-logo img{  
+    max-height: 240px;
+  }  
+  .sponsii{
+    margin: auto;
+  }
+}
 #sponsors .spnsors-logo:hover {
   border-color: transparent;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
@@ -1032,6 +1102,24 @@ a.back-to-top:hover, a.back-to-top:focus {
   background-image: linear-gradient(to right, #29abfccc 0%, #9fdaffcc 50%, #13a4ffe3 100%);
   box-shadow: -1px 1px 43px #c7e9ff6c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Schedule Area */
 #schedules {
   background-color: #000000;
@@ -1222,6 +1310,7 @@ h1 {
 .schedule .schedule-tab-content .tab-content {
   box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 .schedule .schedule-tab-content .card {
   border: none;
