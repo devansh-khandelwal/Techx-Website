@@ -2825,6 +2825,7 @@ hr{
 }
 
 .schedule-checkpoint-info {
+  width: 370px;
   font-size: 1.2rem;
   color:rgb(151, 151, 151);
   margin: 0;
