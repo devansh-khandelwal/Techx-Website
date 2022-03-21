@@ -2741,6 +2741,19 @@ hr{
   border-bottom: 2px solid #14ffec;
 }
 
+
+.schedule-tab-faq {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.schedule-tab-faq.selected-tab {
+  border-bottom: 2px solid #14ffec;
+}
+
+
 .schedule .schedule-tab-title {
   font-size: 2rem;
   margin: 0;
