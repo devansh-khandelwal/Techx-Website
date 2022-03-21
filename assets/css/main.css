@@ -1508,7 +1508,7 @@ h1 {
 
 .accordion .header-title:after {
   font-family: "LineIcons";
-  content: "\e93a";
+  content: "\ea61";
   position: absolute;
   right: 10px;
   color: #999;
@@ -1519,7 +1519,7 @@ h1 {
 }
 
 .accordion .collapsed:after {
-  content: "\e940";
+  content: "\ea61";
 }
 
 .accordion .card-header {
@@ -2754,6 +2754,13 @@ hr{
   display: flex;
   justify-content: center;
 }
+.schedule-content-container-1 {
+  padding: 30px 0;
+  padding-bottom: 0;
+  /* display: flex; */
+  justify-content: center;
+}
+
 
 .schedule-checkpoint-container {
   padding: 10px;
