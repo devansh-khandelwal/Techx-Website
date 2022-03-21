@@ -2590,6 +2590,15 @@ hr{
   top: 0;
 }
 
+.container-gif img{
+  width: 100%;
+}
+
+.container-gif{
+  width: 100vw;
+  height: auto;
+}
+
 #main-slide .carousel-item .carousel-caption {
   opacity: 0;
   transition: opacity 100ms ease 0s;
