@@ -34,7 +34,7 @@
     font-size: 40px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0 10px;
+    padding: 0 2em;
   }
   .counter-section .counter p {
     font-size: 14px;
@@ -301,7 +301,7 @@
   .padding-none:nth-child(5) {
     border-bottom: 1px solid #ddd;
   }
-  
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
