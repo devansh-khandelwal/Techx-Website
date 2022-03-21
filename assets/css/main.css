@@ -1119,21 +1119,21 @@ a.back-to-top:hover, a.back-to-top:focus {
   /*box-shadow: -1px 1px 43px #58bfffcc;*/
 }
 #sponsors .spnsors-logo img{
-  max-width: 220px;
-  max-height: 140px;
-}
-#sponsors .sponsors-logo {
-  border-radius: 1px;
-  width: auto;
-  height: 70px;
-  border: 1px solid #212121;
+  width: 140px !important;
+  max-width: 140px;
+} 
+#sponsors .sponsors-logo {  
+  border-radius: 10px;
+  width: fit-content; 
+  height: 70px;   
   background: #212121;
-  /*border: .1px solid #f1f1f1;*/
+  border: .1px solid #f1f1f188; 
+  padding: 85px 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 30px;
+  align-items: center; 
+  margin: auto; 
+  margin-top: 60px;  
   margin-bottom: 20px;
 }
 #sponsors .assoc{
@@ -1164,21 +1164,19 @@ a.back-to-top:hover, a.back-to-top:focus {
     width: 100px;
     height: 72px;
   }
-  #sponsors .spnsors-logo img{
-    max-width: 100px;
-    max-height: 72px;
-  }
+  #sponsors .spnsors-logo img{ 
+    max-width: 100px; 
+  }   
 }
 
 @media screen and (max-width: 575px) {
   #sponsors .spnsors-logo {
-    width: auto;
-    height: 290px;
-  }
-  #sponsors .spnsors-logo img{
-    max-width: 100%;
-    max-height: 290px;
-  }
+    width: auto; 
+    height: 290px; 
+  } 
+  #sponsors .spnsors-logo img{ 
+    max-width: 100px; 
+  }   
   .sponsii{
     margin: auto;
   }
@@ -1187,10 +1185,10 @@ a.back-to-top:hover, a.back-to-top:focus {
 @media screen and (max-width: 445px) {
   #sponsors .spnsors-logo {
     height: 240px;
-  }
-  #sponsors .spnsors-logo img{
-    max-height: 240px;
-  }
+  } 
+  #sponsors .spnsors-logo img{  
+    max-width: 100px;
+  }    
   .sponsii{
     margin: auto;
   }
