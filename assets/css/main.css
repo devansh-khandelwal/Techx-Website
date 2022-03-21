@@ -1506,7 +1506,7 @@ h1 {
 
 .accordion .header-title:after {
   font-family: "LineIcons";
-  content: "\e93a";
+  content: "\ea61";
   position: absolute;
   right: 10px;
   color: #999;
@@ -1517,7 +1517,7 @@ h1 {
 }
 
 .accordion .collapsed:after {
-  content: "\e940";
+  content: "\ea61";
 }
 
 .accordion .card-header {
@@ -2741,6 +2741,19 @@ hr{
   border-bottom: 2px solid #14ffec;
 }
 
+
+.schedule-tab-faq {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.schedule-tab-faq.selected-tab {
+  border-bottom: 2px solid #14ffec;
+}
+
+
 .schedule .schedule-tab-title {
   font-size: 2rem;
   margin: 0;
@@ -2752,6 +2765,13 @@ hr{
   display: flex;
   justify-content: center;
 }
+.schedule-content-container-1 {
+  padding: 30px 0;
+  padding-bottom: 0;
+  /* display: flex; */
+  justify-content: center;
+}
+
 
 .schedule-checkpoint-container {
   padding: 10px;
