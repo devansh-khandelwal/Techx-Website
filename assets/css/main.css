@@ -2851,15 +2851,24 @@ hr {
   .schedule .schedule-tab-title {
     font-size: 1.5rem;
   }
-  .schedule-tab-faq .schedule-tab-title {
-    font-size: 1.5rem;
-  }
 }
 @media screen and (max-width: 500px) {
   .schedule .schedule-tab-title {
     font-size: 1.2rem;
   }
-  .schedule-tab-faq .schedule-tab-title {
-    font-size: 1.2rem;
+  .schedule-checkpoint-container {
+    padding: 5px;
+  }
+  .schedule-checkpoint-container-content {
+    padding: 0 7px;
+  }
+  .schedule-timeline-checkpoint-title {
+    font-size: 1.3rem;
+  }
+  .schedule-timeline-checkpoint-info {
+    font-size: 1rem;
+  }
+  .schedule-timeline-line {
+    left: 15px;
   }
 }
