@@ -1047,7 +1047,7 @@ a.back-to-top:focus {
 }
 
 .counter-section {
-  background: #323232;
+  background: black;
   overflow: hidden;
   position: relative;
   /*
@@ -1072,7 +1072,7 @@ a.back-to-top:focus {
 
 .counter-section .counter .icon i {
   font-size: 60px;
-  color: #fff;
+  color: #14ffec;
 }
 
 .counter-section .counter p {
@@ -1662,7 +1662,7 @@ h1 {
 
 /* Gallery Section */
 #gallery {
-  background: #323232;
+  background: #000;
   position: relative;
 }
 
@@ -2159,7 +2159,7 @@ h1 {
 
 /* Footer Area Start */
 .footer-area {
-  background: #222222;
+  background: #000;
 }
 
 .footer-area h3 {
@@ -2215,6 +2215,10 @@ h1 {
 
 .footer-area .footer-social li .facebook:hover {
   background: #3b5998;
+}
+
+.footer-area .footer-social li .github:hover {
+  background: #111;
 }
 
 .footer-area .footer-social li .instagram:hover {
