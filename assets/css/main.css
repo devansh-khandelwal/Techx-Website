@@ -605,7 +605,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   vertical-align: middle;
   font-size: 15px;
 }
-
 .navbar-brand {
   position: relative;
   padding: 0px;
@@ -617,9 +616,126 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .navbar {
   background: transparent;
-  position: fixed;
+  position:absolute;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+  padding: 0 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  text-transform: uppercase;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Border from Y to X  */
+.borderYtoX a:before, .borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #14ffec;
+    transition: all 0.3s;
+}
+
+.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.borderYtoX a:hover:before, .borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+
+.slicknav_btn {
+  border-color:#14ffec;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  background:#14ffec;
+}
+
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-main li a.nav-link {
+    padding-top: 18px;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 15px 15px;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 75%;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_nav .active a {
+    background:#14ffec;
+    color: white;
+  }
+  .slicknav_nav a:hover, .slicknav_nav .active {
+    color:#14ffec;
+    /* background: black; */
+  }
+  .slicknav_nav .dropdown li a.active {
+    background: black;
+    color:#14ffec;
+  }
+}
+
+/*
+.navbar-brand {
+  position: relative;
+  padding: 0px;
+}
+.navbar-brand img {
+  width: 75%;
 }
 .top-nav-collapse {
+  background: #fff;
   z-index: 999999;
   top: 0px !important;
   min-height: 58px;
@@ -630,29 +746,23 @@ a.back-to-top:hover, a.back-to-top:focus {
   animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  background: black !important;
+  background: #fff !important;
 }
-
 .top-nav-collapse .navbar-brand {
   top: 0px;
 }
-
 .top-nav-collapse .navbar-nav .nav-link {
   color: #212121 !important;
 }
-
 .top-nav-collapse .navbar-nav .nav-link:hover {
   color:#14ffec !important;
 }
-
 .top-nav-collapse .navbar-nav li.active a.nav-link {
   color:#14ffec !important;
 }
-
 .indigo {
   background: transparent;
 }
-
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #fff;
   padding: 0 15px;
@@ -666,7 +776,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-
 .navbar-expand-lg .navbar-nav li > a:before {
   content: '';
   position: absolute;
@@ -683,7 +792,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   -moz-transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
 }
-
 .navbar-expand-lg .navbar-nav .active a:before {
   -webkit-transform: scale3d(1, 1, 1);
   -moz-transform: scale3d(1, 1, 1);
@@ -695,30 +803,25 @@ a.back-to-top:hover, a.back-to-top:focus {
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-
 .navbar-expand-lg .navbar-nav li a:hover,
 .navbar-expand-lg .navbar-nav li .active > a,
 .navbar-expand-lg .navbar-nav li a:focus {
   color:#14ffec;
   outline: none;
 }
-
 .navbar-expand-lg .navbar-nav .nav-link:focus,
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color:#14ffec !important;
 }
-
 .navbar {
   padding: 0;
 }
-
 .navbar li.active a.nav-link {
   color:#14ffec !important;
 }
-
 .dropdown-toggle::after {
   display: none;
-}
+} */
 
 .dropdown-menu {
   margin: 0;
@@ -819,24 +922,20 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
   #nav-main li a.nav-link {
     padding-top: 18px;
   }
 }
-
 .navbar-toggler {
   display: none;
 }
-
 .mobile-menu {
   display: none;
 }
-
 .slicknav_menu {
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .navbar-header {
     width: 100%;
@@ -867,7 +966,7 @@ a.back-to-top:hover, a.back-to-top:focus {
     background: #f5f5f5;
     color:#14ffec;
   }
-}
+} */
 
 .about-item {
   padding: 10px;
@@ -1113,6 +1212,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   background-image: linear-gradient(to right, #29abfccc 0%, #9fdaffcc 50%, #13a4ffe3 100%);
   box-shadow: -1px 1px 43px #c7e9ff6c;
 }
+
 
 
 
@@ -1398,7 +1498,7 @@ h1 {
 
 .accordion .header-title:after {
   font-family: "LineIcons";
-  content: "\e93a";
+  content: "\ea61";
   position: absolute;
   right: 10px;
   color: #999;
@@ -1409,7 +1509,7 @@ h1 {
 }
 
 .accordion .collapsed:after {
-  content: "\e940";
+  content: "\ea61";
 }
 
 .accordion .card-header {
@@ -1539,7 +1639,7 @@ h1 {
 }
 .services-item:hover .services-content{
   transform: translateY(-100px);
-  
+
 }
 
 .services-item:hover .services-content a{
@@ -2482,6 +2582,15 @@ hr{
   top: 0;
 }
 
+.container-gif img{
+  width: 100%;
+}
+
+.container-gif{
+  width: 100vw;
+  height: auto;
+}
+
 #main-slide .carousel-item .carousel-caption {
   opacity: 0;
   transition: opacity 100ms ease 0s;
@@ -2633,6 +2742,19 @@ hr{
   border-bottom: 2px solid #14ffec;
 }
 
+
+.schedule-tab-faq {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.schedule-tab-faq.selected-tab {
+  border-bottom: 2px solid #14ffec;
+}
+
+
 .schedule .schedule-tab-title {
   font-size: 2rem;
   margin: 0;
@@ -2644,6 +2766,13 @@ hr{
   display: flex;
   justify-content: center;
 }
+.schedule-content-container-1 {
+  padding: 30px 0;
+  padding-bottom: 0;
+  /* display: flex; */
+  justify-content: center;
+}
+
 
 .schedule-checkpoint-container {
   padding: 10px;
@@ -2715,6 +2844,7 @@ hr{
 }
 
 .schedule-checkpoint-info {
+  width: 370px;
   font-size: 1.2rem;
   color:rgb(151, 151, 151);
   margin: 0;
