@@ -38,6 +38,8 @@
     <link rel="shortcut icon" href="assets/img/favicon-x.ico">
     <!-- Event Card -->
     <link rel="stylesheet" href=".//assets/css/eventsCard.css" />
+    <!-- Gif Pause -->
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
 
 
 </head>
@@ -268,7 +270,8 @@
               </div> -->
 
               <div class="container-gif">
-                <img src="./assets/img/slider/TechX (1) (1).gif" alt="">
+                <img class="freezeframe" src="./assets/img/slider/TechX (1) (1).gif" alt="" id="gifCover">
+                <!-- <img class="freezeframe" src="./assets/img/techX cover.png" alt="" id="gifCover"> -->
               </div>
               <!-- Main Carousel Section End -->
 
@@ -1416,6 +1419,12 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
+      </script>
+      <script>
+        const gif = document.getElementById('gifCover');
+        setTimeout(() => {
+          gif.src = './assets/img/techX cover.png';
+        }, 5000);
       </script>
 
       <!-- Apply with Devfolio Script -->
