@@ -1029,11 +1029,12 @@ a.back-to-top:focus {
 }
 
 #event-slides .intro-title {
-  color: #212121;
+  color: #bdb2b2;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 #event-slides .list-specification li {
