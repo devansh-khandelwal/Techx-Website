@@ -2773,7 +2773,7 @@ hr {
 }
 
 .schedule-checkpoint-container {
-  padding: 10px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
 }
@@ -2849,7 +2849,7 @@ hr {
 }
 
 .schedule-checkpoint-info-margin {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 800px) {
