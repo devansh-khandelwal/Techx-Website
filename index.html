@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>TechX'21</title>
+    <title>TechX'22</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300&display=swap" rel="stylesheet">
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
@@ -34,26 +38,129 @@
     <link rel="shortcut icon" href="assets/img/favicon-x.ico">
     <!-- Event Card -->
     <link rel="stylesheet" href=".//assets/css/eventsCard.css" />
+    <!-- Gif Pause -->
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
 
 
 </head>
   <body>
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="icon-menu"></span>
+                        <span class="icon-menu"></span>
+                        <span class="icon-menu"></span>
+                    </button>
+                    <!--<a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>-->
+                </div>
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="navbar-nav w-100 justify-content-center">   <!--class to change-->
+                        <li class="nav-item active borderYtoX">
+                            <a class="nav-link" href="#header-wrap">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item borderYtoX">
+                            <a class="nav-link" href="#about">
+                                Events
+                            </a>
+                        </li>
+                        <li class="nav-item borderYtoX">
+                            <a class="nav-link" href="#schedules">
+                                Schedules
+                            </a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                          <a class="nav-link" href="#team">
+                            Speakers
+                          </a>
+                        </li>
+                      -->
+                        <li class="nav-item borderYtoX">
+                            <a class="nav-link" href="#gallery">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item borderYtoX">
+                            <a class="nav-link" href="#faq">
+                                Rules
+                            </a>
+                        </li>
+                        <li class="nav-item borderYtoX">
+                            <a class="nav-link" href="#sponsors">
+                                Sponsors
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                          <a class="nav-link" href="#register">
+                            register
+                          </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Start -->
+            <ul class="mobile-menu">
+                <li>
+                    <a class="page-scrool" href="#header-wrap">Home</a>
+                </li>
+                <li>
+                    <a class="page-scrool" href="#about">Events</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#schedules">Schedules</a>
+                </li>
+                <!--
+                <li>
+                  <a class="page-scroll" href="#team">Speakers</a>
+                </li>
+              -->
+                <li>
+                    <a class="page-scroll" href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#faq">Rules</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#sponsors">Sponsors</a>
+                </li>
+
+                <!-- <li>
+                  <a class="page-scroll" href="#register">Register</a>
+                </li> -->
+
+            </ul>
+            <!-- Mobile Menu End -->
+
+        </nav>
+        <!-- Navbar End -->
+
+
 
       <!-- Header Area wrapper Starts -->
-      <header id="header-wrap">
+      <!-- <header id="header-wrap"> -->
           <!-- Navbar Start -->
-          <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
-              <div class="container">
+          <!-- <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+              <div class="container"> -->
                   <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
+                  <!-- <div class="navbar-header">
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                           <span class="icon-menu"></span>
                           <span class="icon-menu"></span>
                           <span class="icon-menu"></span>
-                      </button>
+                      </button> -->
                       <!--<a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>-->
-                  </div>
+                  <!-- </div>
                   <div class="collapse navbar-collapse" id="main-navbar">
                       <ul class="navbar-nav mr-auto w-100 justify-content-end">
                           <li class="nav-item active">
@@ -70,7 +177,7 @@
                               <a class="nav-link" href="#schedules">
                                   Schedules
                               </a>
-                          </li>
+                          </li> -->
                           <!--
                           <li class="nav-item">
                             <a class="nav-link" href="#team">
@@ -78,7 +185,7 @@
                             </a>
                           </li>
                         -->
-                          <li class="nav-item">
+                          <!-- <li class="nav-item">
                               <a class="nav-link" href="#gallery">
                                   Gallery
                               </a>
@@ -92,7 +199,7 @@
                               <a class="nav-link" href="#sponsors">
                                   Sponsors
                               </a>
-                          </li>
+                          </li> -->
 
                           <!-- <li class="nav-item">
                             <a class="nav-link" href="#register">
@@ -100,17 +207,17 @@
                             </a>
                           </li> -->
 
-                          <li class="nav-item">
+                          <!-- <li class="nav-item">
                               <a class="nav-link" href="#google-map-area">
                                   Contact
                               </a>
                           </li>
                       </ul>
                   </div>
-              </div>
+              </div> -->
 
               <!-- Mobile Menu Start -->
-              <ul class="mobile-menu">
+              <!-- <ul class="mobile-menu">
                   <li>
                       <a class="page-scrool" href="#header-wrap">Home</a>
                   </li>
@@ -119,13 +226,13 @@
                   </li>
                   <li>
                       <a class="page-scroll" href="#schedules">Schedules</a>
-                  </li>
+                  </li> -->
                   <!--
                   <li>
                     <a class="page-scroll" href="#team">Speakers</a>
                   </li>
                 -->
-                  <li>
+                  <!-- <li>
                       <a class="page-scroll" href="#gallery">Gallery</a>
                   </li>
                   <li>
@@ -133,39 +240,38 @@
                   </li>
                   <li>
                       <a class="page-scroll" href="#sponsors">Sponsors</a>
-                  </li>
+                  </li> -->
 
                   <!-- <li>
                     <a class="page-scroll" href="#register">Register</a>
                   </li> -->
 
-                  <li>
+                  <!-- <li>
                       <a class="page-scroll" href="#google-map-area">Contact</a>
                   </li>
-              </ul>
+              </ul> -->
               <!-- Mobile Menu End -->
 
-          </nav>
+          <!-- </nav> -->
           <!-- Navbar End -->
-          <!-- Main Carousel Section Start -->
-          <div id="main-slide" class="carousel slide" data-ride="carousel">
 
+
+          <!-- Main Carousel Section Start -->
+          <!-- <div id="main-slide" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                   <div style="height: 130vh;
           background-image:  url(assets/img/slider/slidetest5.jpg);
           background-size: cover;
-          background-position: top;" class="carousel-item active check">
-                      <!--<img class="d-block w-100" src="assets/img/slider/slidetest3.jpg" alt="First slide">-->
-                      <div class="carousel-caption d-md-block">
-                          <!-- <p class="fadeInUp wow" data-wow-delay=".6s">IOSD NSUT PRESENTS</p> -->
+          background-position: top;" class="carousel-item active check">                     
+                      <div class="carousel-caption d-md-block">                         
                           <img class="heading fadeInUp wow" data-wow-delay=".9s" src="assets/img/techx.png" id="nsut_img" alt="" style="padding-bottom: 50px;">
-                          <!-- <div style="background-color: transparent;margin-top: 30px;margin-bottom: 30px;padding-top: 10px;" class="fadeInDown wow" data-wow-delay="1.2s" id="rounded-countdown">
-                            <div id="countdown2" class="ClassyCountdownDemo"></div>
-                          </div> -->
                       </div>
                   </div>
+              </div> -->
 
-
+              <div class="container-gif">
+                <img class="freezeframe" src="./assets/img/slider/TechX (1) (1).gif" alt="" id="gifCover">
+                <!-- <img class="freezeframe" src="./assets/img/techX cover.png" alt="" id="gifCover"> -->
               </div>
               <!-- Main Carousel Section End -->
 
@@ -176,7 +282,7 @@
               <div class="row">
                   <div class="col-12">
                       <div class="section-title-header text-center">
-                          <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why you should participate in TechX'21?</h1>
+                          <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why you should participate in TechX'22?</h1>
                           <p class="wow fadeInDown" data-wow-delay="0.2s">Reasons are the pillars of mind.</p>
                       </div>
                   </div>
@@ -283,15 +389,15 @@
                   </div>
               </div>
           </div>
-      </section>  
-              
+      </section>
+
     <main class="event-page-content">
       <div class="eventCard">
         <div class="eventContent">
-          <h2 class="eventTitle">Innovate NSUT</h2>
+          <h2 class="eventTitle">InnovateNSUT</h2>
           <p class="eventCopy">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-            architecto incidunt asperiores illo quos obcaecati, aut nulla sed
+            It’s a 24 hr hackathon in which participants can compete in a team with a max of 4 members. 
+            They need to submit their projects within 24 hrs time.
           </p>
           <button class="eventBtn">View Website</button>
         </div>
@@ -300,8 +406,8 @@
         <div class="eventContent">
           <h2 class="eventTitle">Code Wars</h2>
           <p class="eventCopy">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-            architecto incidunt asperiores illo quos obcaecati, aut nulla sed
+            It's a comprehensive 2-round coding contest that will be conducted on HackerRank. 
+            Each question will have a weightage and the person with maximum scores wins.
           </p>
           <button class="eventBtn">Register</button>
         </div>
@@ -326,7 +432,7 @@
                   <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
                       <div class="counter wow fadeInRight" data-wow-delay="0.3s">
                           <div class="icon"><i class="lni-display"></i></div>
-                          <p>Online Event</p>
+                          <p>Offline Event</p>
                           <!-- <span>San Francisco, CA</span> -->
                       </div>
                   </div>
@@ -334,7 +440,7 @@
                   <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
                       <div class="counter wow fadeInRight" data-wow-delay="0.6s">
                           <div class="icon"><i class="lni-calendar"></i></div>
-                          <p>March 12-14, 2021</p>
+                          <p>March 31- April 3, 2022</p>
                           <!-- <span>09:00 AM – 05:00 PM</span> -->
                       </div>
                   </div>
@@ -568,127 +674,364 @@
       <!-- Gallary Section End -->
       <!-- Ask Question Section Start -->
       <section id="faq" class="section-padding">
-          <div class="container">
-              <div class="row">
-                  <div class="col-12">
-                      <div class="section-title-header text-center">
-                          <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Rules and Regulations</h1>
-                          <p class="wow fadeInDown" data-wow-delay="0.2s">Discipline is the bridge bewtween<br>goals and accomplishment.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Rules and Regulations</h1>
+                        <p class="wow fadeInDown" data-wow-delay="0.2s">Discipline is the bridge between<br>goals and accomplishment.</p>
+                    </div>
+                </div>
+            </div>
+      <div class="schedule-tabs-container">
+        <div data-content="innovateNSUT-faq" class="schedule-tab-faq selected-tab">
+          <h4 class="schedule-tab-title">InnovateNSUT</h4>
+        </div>
+        <div data-content="codeWars-faq" class="schedule-tab-faq">
+          <h4 class="schedule-tab-title">Code Wars</h4>
+        </div>
+        <div data-content="quiz-faq" class="schedule-tab-faq">
+          <h4 class="schedule-tab-title">Quiz</h4>
+        </div>
+      </div>
+      <div class="schedule-content-container-1">
+        <div class="schedule-content schedule-content-selected schedule-event" id="innovateNSUT-faq">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="accordion">
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="lni lni-question-circle"></i>Teams
+                            </div>
+                        </div>
+                        <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                            <div class="card-body">
+                                You can have at most 4 members in your team. You can either invite your friends to form a team or you can request other teams to add you as a member. <br> Lone Wolfs are also allowed
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                                <i class=" lni lni-question-circle"></i>  Mode
+                            </div>
+                        </div>
+                        <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                                It's an OnCampus Offline Hackathon.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                                <i class="lni lni-question-circle"></i>  Duration
+                            </div>
+                        </div>
+                        <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                              The Duration of the Hackathon is 24 hours. Problem statement will be released 2 hours before the hack phase.
+                              Hack phase is of 24 hours. 
+                              Presentation and Final round is of 4-5 hours                              
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+                                <i class="lni lni-question-circle"></i> Innovation
+                            </div>
+                        </div>
+                        <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                You are expected to come up with new and innovative ideas, any idea that has been copied from somewhere will be disqualified.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="accordion">
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingOne2">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="lni lni-question-circle"></i> Themes
+                            </div>
+                        </div>
+                        <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                            <div class="card-body">
+                              Multiple themes will be released soon, you must submit a hack of these themes only.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingTwo2">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
+                                <i class="lni lni-question-circle"></i> Submission
+                            </div>
+                        </div>
+                        <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                                Once the hackathon starts, Entries can be submitted anytime in the 48 hour hack phase.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
+                                <i class="lni lni-question-circle"></i> Development
+                            </div>
+                        </div>
+                        <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                Your hack must be developed entirely during the Hackathon duration. You may use open source libraries and other freely available systems / services such as Google Maps, Facebook Connect, Twitter feeds etc.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
+                                <i class="lni lni-question-circle"></i> Intellectual Property
+                            </div>
+                        </div>
+                        <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                The intellectual property of your code belongs only to your team. By participating in the hackathon, you agree to the terms and conditions of Devfolio.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="schedule-content schedule-event" id="codeWars-faq">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="accordion">
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="header-title" data-toggle="collapse" data-target="#question7" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="lni lni-question-circle"></i>Teams
+                            </div>
+                        </div>
+                        <div id="question7" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                            <div class="card-body">
+                              Candidates have to participate individually.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="header-title" data-toggle="collapse" data-target="#question8" aria-expanded="false" aria-controls="questionTwo">
+                                <i class=" lni lni-question-circle"></i>  Mode
+                            </div>
+                        </div>
+                        <div id="question8" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                                CodeWars is an Offline coding contest which will be conducted on HackerRank.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question9" aria-expanded="false" aria-controls="questionThree">
+                                <i class="lni lni-question-circle"></i>  Duration
+                            </div>
+                        </div>
+                        <div id="question9" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                The Contest is of 3 hours.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question10" aria-expanded="false" aria-controls="questionFour">
+                                <i class="lni lni-question-circle"></i> Languages
+                            </div>
+                        </div>
+                        <div id="question10" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                C, C++, Java and Python are allowed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="accordion">
+                  <div style="background-color:#212121;border-color: white;" class="card">
+                    <div class="card-header" id="headingThree">
+                        <div class="header-title" data-toggle="collapse" data-target="#question13" aria-expanded="false" aria-controls="questionFive">
+                            <i class="lni lni-question-circle"></i> Scoring & Ranking
+                        </div>
+                    </div>
+                    <div id="question13" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                        <div class="card-body">
+                          Each challenge has a pre-determined score and a participant’s score depends on the number of test cases successfully passed (partial scores given for passing partial testcases).
+                          <br> If a participant submits more than one solution per challenge, then the score will reflect the highest score achieved.
+                          <br> Participants are ranked by score. If two or more participants achieve the same score, then the tie is broken by the total time taken to submit the last solution resulting in a higher score.
+                          
+                        </div>
+                    </div>
+                </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingTwo2">
+                            <div class="header-title" data-toggle="collapse" data-target="#question12" aria-expanded="false" aria-controls="questionTwo">
+                                <i class="lni lni-question-circle"></i> Submission
+                            </div>
+                        </div>
+                        <div id="question12" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                              Participants can submit solution to a problem any number of times, the solution with best score will be considered. <br> Immediate disqualification in case of any plagiarism. <br>
+                              The decision of organizing committee will be final.                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                      <div class="card-header" id="headingOne2">
+                          <div class="header-title" data-toggle="collapse" data-target="#question11" aria-expanded="true" aria-controls="collapseOne">
+                              <i class="lni lni-question-circle"></i> Theme
+                          </div>
+                      </div>
+                      <div id="question11" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                          <div class="card-body">
+                              There will be a single theme of the hackathon, you must submit a hack of that theme only.
+                          </div>
                       </div>
                   </div>
-              </div>
-              <div class="row">
-                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-                      <div class="accordion">
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingOne">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
-                                      <i class="lni-pencil"></i> Teams
-                                  </div>
-                              </div>
-                              <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                                  <div class="card-body">
-                                      You can have at most 5 members in your team. You can either invite your friends to form a team or you can request other teams to add you as a member.
-                                  </div>
-                              </div>
-                          </div>
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingTwo">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
-                                      <i class="lni-pencil"></i>  Mode
-                                  </div>
-                              </div>
-                              <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                                  <div class="card-body">
-                                      It's an online hackathon, you can participate from anywhere
-                                  </div>
-                              </div>
-                          </div>
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingThree">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
-                                      <i class="lni-pencil"></i>  Duration
-                                  </div>
-                              </div>
-                              <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                                  <div class="card-body">
-                                      Problem Statement will be released on 5th March, 2021. Deadline for submission is 10th March, 2021 i.e. 5-10 March is hack phase. Selected teams have to give presentation on 14th March, 2021.
-                                  </div>
-                              </div>
-                          </div>
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingThree">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
-                                      <i class="lni-pencil"></i> Innovation
-                                  </div>
-                              </div>
-                              <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                                  <div class="card-body">
-                                      You are expected to come up with new and innovative ideas, any idea that has been copied from somewhere will be disqualified.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-                      <div class="accordion">
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingOne2">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
-                                      <i class="lni-pencil"></i> Themes
-                                  </div>
-                              </div>
-                              <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                                  <div class="card-body">
-                                      There will be a single theme of the hackathon, you must submit a hack of that theme only.
-                                  </div>
-                              </div>
-                          </div>
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingTwo2">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
-                                      <i class="lni-pencil"></i> Submission
-                                  </div>
-                              </div>
-                              <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                                  <div class="card-body">
-                                      Once the hackathon starts, you will get an option to submit your hack, you can submit as many times as you want, the last hack will be considered as the final submission.
-                                  </div>
-                              </div>
-                          </div>
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingThree">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
-                                      <i class="lni-pencil"></i> Development
-                                  </div>
-                              </div>
-                              <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                                  <div class="card-body">
-                                      Your hack must be developed entirely during the Hackathon duration. You may use open source libraries and other freely available systems / services such as Google Maps, Facebook Connect, Twitter feeds etc.
-                                  </div>
-                              </div>
-                          </div>
-                          <div style="background-color:#212121;border-color: white;" class="card">
-                              <div class="card-header" id="headingThree">
-                                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
-                                      <i class="lni-pencil"></i> Intellectual Property
-                                  </div>
-                              </div>
-                              <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                                  <div class="card-body">
-                                      The intellectual property of your code belongs only to your team. By participating in the hackathon, you agree to the terms and conditions of Devfolio.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question14" aria-expanded="false" aria-controls="questionSix">
+                                <i class="lni lni-question-circle"></i> Colleges allowed
+                            </div>
+                        </div>
+                        <div id="question14" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                All colleges of Delhi-NCR are allowed to take part in the Contest.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="schedule-content schedule-event" id="quiz-faq">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="accordion">
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="header-title" data-toggle="collapse" data-target="#question15" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="lni lni-question-circle"></i>Teams
+                            </div>
+                        </div>
+                        <div id="question15" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                            <div class="card-body">
+                                You can have at most 4 members in your team. You can either invite your friends to form a team or you can request other teams to add you as a member.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="header-title" data-toggle="collapse" data-target="#question16" aria-expanded="false" aria-controls="questionTwo">
+                                <i class=" lni lni-question-circle"></i>  Mode
+                            </div>
+                        </div>
+                        <div id="question16" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                                It's an Offline hackathon, the venue of the hackathon is ______ 
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question17" aria-expanded="false" aria-controls="questionThree">
+                                <i class="lni lni-question-circle"></i>  Duration
+                            </div>
+                        </div>
+                        <div id="question17" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                Problem Statement will be released on 5th March, 2021. Deadline for submission is 10th March, 2021 i.e. 5-10 March is hack phase. Selected teams have to give presentation on 14th March, 2021.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question18" aria-expanded="false" aria-controls="questionFour">
+                                <i class="lni lni-question-circle"></i> Innovation
+                            </div>
+                        </div>
+                        <div id="question18" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                You are expected to come up with new and innovative ideas, any idea that has been copied from somewhere will be disqualified.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="accordion">
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingOne2">
+                            <div class="header-title" data-toggle="collapse" data-target="#question19" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="lni lni-question-circle"></i> Themes
+                            </div>
+                        </div>
+                        <div id="question19" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                            <div class="card-body">
+                                There will be a single theme of the hackathon, you must submit a hack of that theme only.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingTwo2">
+                            <div class="header-title" data-toggle="collapse" data-target="#question20" aria-expanded="false" aria-controls="questionTwo">
+                                <i class="lni lni-question-circle"></i> Submission
+                            </div>
+                        </div>
+                        <div id="question20" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                                Once the hackathon starts, you will get an option to submit your hack, you can submit as many times as you want, the last hack will be considered as the final submission.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#212121;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question21" aria-expanded="false" aria-controls="questionFive">
+                                <i class="lni lni-question-circle"></i> Development
+                            </div>
+                        </div>
+                        <div id="question21" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                Your hack must be developed entirely during the Hackathon duration. You may use open source libraries and other freely available systems / services such as Google Maps, Facebook Connect, Twitter feeds etc.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:#181414;border-color: white;" class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#question22" aria-expanded="false" aria-controls="questionSix">
+                                <i class="lni lni-question-circle"></i> Intellectual Property
+                            </div>
+                        </div>
+                        <div id="question22" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                The intellectual property of your code belongs only to your team. By participating in the hackathon, you agree to the terms and conditions of Devfolio.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
       <!-- Ask Question Section End -->
 
       <!-- Sponsors Section Start -->
-      <section id="sponsors" class="section-padding" style="background-color: #212121;">
+      <section id="sponsors" class="section-padding" style="background-color: #000;">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -839,9 +1182,9 @@
                       <a href="#"><img class="img-fluid" src="assets/img/sponsors/npm.png" alt=""></a>
                     </div>
                   </div>
-            <div class="btnt col-12 text-center">
+            <!-- <div class="btnt col-12 text-center">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSejOOUpAFr1mXVbsN-G_VnR7gEfZJVPbydFTvqY-Zgqvf1bHQ/viewform?usp=sf_link" class="btn btn-common" target="_blank">Become a Sponsor</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -853,7 +1196,7 @@
             <div class="col-12">
               <div class="section-title-header text-center">
                 <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Guideline</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s"> IOSD NSUT Presents TechX’21</p>
+                <p class="wow fadeInDown" data-wow-delay="0.2s"> IOSD NSUT Presents TechX’22</p>
               </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
@@ -864,21 +1207,21 @@
             <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
 
               <p class="intro-desc">
-                TechX’21 is the first pan-India technical fest by International Organisation of Software  Developers - Netaji Subhash University of Technology (esrtwhile NSIT)
-                Building upon the success of IOSD’s own hackathons in various chapters in colleges across India, TechX’21 is a result of innovation and an aspiration to dream higher.
+                TechX’22 is the first pan-India technical fest by International Organisation of Software  Developers - Netaji Subhash University of Technology (esrtwhile NSIT)
+                Building upon the success of IOSD’s own hackathons in various chapters in colleges across India, TechX’22 is a result of innovation and an aspiration to dream higher.
                 A completely online event, TechX will be held on various online platforms like Devfolio and {{Platform of CodeWars}} to make it accessible to all students amidst the pandemic.
                 <hr>
 
 
               </p>
               <p>
-                TechX’21 comprises of 3 events :
+                TechX’22 comprises of 3 events :
               </p>
               <h2 class="intro-title">Check List</h2>
               <ul class="list-specification">
                 <li><i class="lni-check-mark-circle"></i>InnovateNSUT - A hackathon conducted on HackerEarth</li>
                 <li><i class="lni-check-mark-circle"></i>CodeWars - A comprehensive 2- round coding contest</li>
-                <li><i class="lni-check-mark-circle"></i>Workshop - An advanced Workshop on latest technology</li>
+                <li><i class="lni-check-mark-circle"></i>Quiz - Lorem ipsum, dolor sit </li>
               </ul>
 
             </div>
@@ -921,8 +1264,8 @@
             </div>
 
             <div id="end-div" class="col-md-6 col-lg-4 col-sm-6 col-xs-12 wow fadeInUp " data-wow-delay="0.8s">
-              <h3 class="foot-heading" >FOLLOW US ON</h3> 
-              
+              <h3 class="foot-heading" >FOLLOW US ON</h3>
+
               <hr className="footer-hr" size="4" />
               <div class="widget">
                 <!-- <h5 class="widget-title">FOLLOW US ON</h5> -->
@@ -1078,6 +1421,12 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
+      </script>
+      <script>
+        const gif = document.getElementById('gifCover');
+        setTimeout(() => {
+          gif.src = './assets/img/techX cover.png';
+        }, 5000);
       </script>
 
       <!-- Apply with Devfolio Script -->
