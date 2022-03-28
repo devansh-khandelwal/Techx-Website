@@ -2754,7 +2754,7 @@ hr {
   border-bottom: 2px solid #14ffec;
 }
 
-.schedule .schedule-tab-title {
+.schedule-tab-title {
   font-size: 2rem;
   margin: 0;
 }
@@ -2848,18 +2848,18 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-  .schedule .schedule-tab-title {
+  .schedule-tab-title {
     font-size: 1.5rem;
   }
-  .schedule-tab-faq .schedule-tab-title {
+  /* .schedule-tab-faq .schedule-tab-title {
     font-size: 1.5rem;
-  }
+  } */
 }
 @media screen and (max-width: 500px) {
-  .schedule .schedule-tab-title {
+  .schedule-tab-title {
     font-size: 1.2rem;
   }
-  .schedule-tab-faq .schedule-tab-title {
+  /* .schedule-tab-faq .schedule-tab-title {
     font-size: 1.2rem;
-  }
+  } */
 }
