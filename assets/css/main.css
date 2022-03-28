@@ -2773,7 +2773,7 @@ hr {
 }
 
 .schedule-checkpoint-container {
-  padding: 0 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
 }
@@ -2786,7 +2786,6 @@ hr {
   padding: 0;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  margin: 0!important;
 }
 
 .schedule-time {
@@ -2813,7 +2812,7 @@ hr {
 }
 
 #schedules {
-  padding: 60px 0px;
+  padding: 60px 20px;
   padding-bottom: 30px;
 }
 
@@ -2842,18 +2841,17 @@ hr {
 }
 
 .schedule-checkpoint-info {
-  max-width: 370px;
+  width: 370px;
   font-size: 1.2rem;
   color: rgb(151, 151, 151);
   margin: 0;
 }
 
-.schedule-checkpoint-info-margin {
-  margin-bottom: 0.5rem;
-}
-
 @media screen and (max-width: 800px) {
   .schedule .schedule-tab-title {
+    font-size: 1.5rem;
+  }
+  .schedule-tab-faq .schedule-tab-title {
     font-size: 1.5rem;
   }
 }
@@ -2861,19 +2859,7 @@ hr {
   .schedule .schedule-tab-title {
     font-size: 1.2rem;
   }
-  .schedule-checkpoint-container {
-    padding: 5px;
-  }
-  .schedule-checkpoint-container-content {
-    padding: 0 7px;
-  }
-  .schedule-timeline-checkpoint-title {
-    font-size: 1.3rem;
-  }
-  .schedule-timeline-checkpoint-info {
-    font-size: 1rem;
-  }
-  .schedule-timeline-line {
-    left: 15px;
+  .schedule-tab-faq .schedule-tab-title {
+    font-size: 1.2rem;
   }
 }
