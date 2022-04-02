@@ -1140,6 +1140,31 @@ a.back-to-top:focus {
 #sponsors .assoc {
   margin-bottom: -35px;
 }
+
+
+#sponsors-other .spnsors-logo img {
+  max-width: 220px;
+  max-height: 140px;
+}
+#sponsors-other .sponsors-logo img {
+  width: 220px !important;
+  height: auto;
+}
+#sponsors-other .sponsors-logo {
+  border-radius: 10px;
+  width: fit-content;
+  height: 70px;
+  background: #fff;
+  border: 0.1px solid #222;
+  padding: 85px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1100px) {
   #sponsors .spnsors-logo {
     width: 190px;
