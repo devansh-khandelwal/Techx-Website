@@ -1164,8 +1164,8 @@ a.back-to-top:focus {
   margin-top: 60px;
   margin-bottom: 20px;
 }
-.apply-button span{
-  margin-top: 10px;
+.apply-button{
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 1100px) {
