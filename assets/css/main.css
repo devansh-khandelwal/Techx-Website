@@ -66,6 +66,7 @@ ol li {
 .applyBtn{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 } 
 
 .hero-heading {
