@@ -630,6 +630,11 @@ a.back-to-top:focus {
   background: transparent;
   position: fixed;
 }
+
+.navbar>.container, .navbar>.container-fluid{
+  margin-top: 8px;
+}
+
 .top-nav-collapse {
   z-index: 999999;
   top: 0px !important;
