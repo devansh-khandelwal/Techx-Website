@@ -67,6 +67,10 @@ ol li {
   display: flex;
   justify-content: center;
 }
+.applyBtn{
+  display: flex;
+  justify-content: center;
+}
 
 .hero-heading {
   font-size: 40px;
@@ -2795,6 +2799,7 @@ hr {
 .schedule-content-container {
   padding: 30px 0;
   padding-bottom: 0;
+  margin-left: 30px;
   display: flex;
   justify-content: center;
 }
