@@ -63,6 +63,11 @@ ol li {
   list-style: none;
 }
 
+.applyBtn .apply-button{
+  display: flex;
+  justify-content: center;
+}
+
 .hero-heading {
   font-size: 40px;
   font-weight: 700;
